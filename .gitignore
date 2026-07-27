@@ -1,0 +1,28 @@
+# ---- Data (the ~94 GB feature/data store lives outside the repo) ----
+data_storage/
+btc/data_storage/
+logs/
+# Parquet is data — never commit, EXCEPT the tiny sample under sample_data/
+*.parquet
+!sample_data/**/*.parquet
+
+# Trained model binaries (not part of the committed artifacts)
+*.pkl
+results/models/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# ---- Editor / OS ----
+.vscode/
+.idea/
+.DS_Store

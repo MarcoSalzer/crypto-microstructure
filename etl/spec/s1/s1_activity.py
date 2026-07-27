@@ -1,0 +1,201 @@
+# etl/spec/s1/s1_activity.py
+# ==============================================================================
+# S1 Feature Specs: Activity
+#
+# Binance-only pipeline | Source: S0 features (parquet)
+# 20 features | Feature IDs: 1020-1037
+# ==============================================================================
+
+from typing import List
+from etl.spec import FeatureSpec, Dep
+
+S1_ACTIVITY_FEATURES: List[FeatureSpec] = [
+
+    # === trades.avg_trade_size ===
+    FeatureSpec(
+        name="avg_trade_size_fut_1s",
+        stage="S1",
+        operator="trades.avg_trade_size",
+        params={'market_scope': 'Futures', 'resample': '1s'},
+        group="Activity",
+        description="Average trade size: volume / trade_count. NaN if count=0.",
+        depends_on=(Dep(name="trade_count_fut_1s", kind="col"), Dep(name="volume_fut_1s", kind="col"),),
+        feature_id=1020,
+    ),
+    FeatureSpec(
+        name="avg_trade_size_spot_1s",
+        stage="S1",
+        operator="trades.avg_trade_size",
+        params={'market_scope': 'Spot', 'resample': '1s'},
+        group="Activity",
+        description="Average trade size: volume / trade_count. NaN if count=0.",
+        depends_on=(Dep(name="trade_count_spot_1s", kind="col"), Dep(name="volume_spot_1s", kind="col"),),
+        feature_id=1021,
+    ),
+
+    # === l2.l2_update_count ===
+    FeatureSpec(
+        name="l2_update_count_fut_5bps_1s",
+        stage="S1",
+        operator="l2.l2_update_count",
+        params={'market_scope': 'Futures', 'resample': '1s'},
+        group="Activity",
+        description="Count of L2 depth changes per bucket.",
+        depends_on=(Dep(name="depth_notional_ask_5bps_fut_1s", kind="col"), Dep(name="depth_notional_bid_5bps_fut_1s", kind="col"),),
+        feature_id=1022,
+    ),
+    FeatureSpec(
+        name="l2_update_count_spot_5bps_1s",
+        stage="S1",
+        operator="l2.l2_update_count",
+        params={'market_scope': 'Spot', 'resample': '1s'},
+        group="Activity",
+        description="Count of L2 depth changes per bucket.",
+        depends_on=(Dep(name="depth_notional_ask_5bps_spot_1s", kind="col"), Dep(name="depth_notional_bid_5bps_spot_1s", kind="col"),),
+        feature_id=1023,
+    ),
+
+    # === derived.participation_rate_1s ===
+    FeatureSpec(
+        name="participation_rate_fut_1s",
+        stage="S1",
+        operator="derived.participation_rate_1s",
+        params={'market_scope': 'Futures', 'resample': '1s'},
+        group="Activity",
+        description="Participation rate: volume / EWMA(volume, hl=3600s).",
+        depends_on=(Dep(name="volume_fut_1s", kind="col"),),
+        feature_id=1024,
+    ),
+    FeatureSpec(
+        name="participation_rate_spot_1s",
+        stage="S1",
+        operator="derived.participation_rate_1s",
+        params={'market_scope': 'Spot', 'resample': '1s'},
+        group="Activity",
+        description="Participation rate: volume / EWMA(volume, hl=3600s).",
+        depends_on=(Dep(name="volume_spot_1s", kind="col"),),
+        feature_id=1025,
+    ),
+
+    # === derived.roll_sum ===
+    FeatureSpec(
+        name="trade_count_fut_300s",
+        stage="S1",
+        operator="derived.roll_sum",
+        params={'market_scope': 'Futures', 'window_s': 300, 'resample': '1s'},
+        group="Activity",
+        description="Rolling sum over window.",
+        depends_on=(Dep(name="trade_count_fut_1s", kind="col"),),
+        feature_id=1026,
+    ),
+    FeatureSpec(
+        name="trade_count_fut_60s",
+        stage="S1",
+        operator="derived.roll_sum",
+        params={'market_scope': 'Futures', 'window_s': 60, 'resample': '1s'},
+        group="Activity",
+        description="Rolling sum over window.",
+        depends_on=(Dep(name="trade_count_fut_1s", kind="col"),),
+        feature_id=1027,
+    ),
+    FeatureSpec(
+        name="trade_count_fut_900s",
+        stage="S1",
+        operator="derived.roll_sum",
+        params={'market_scope': 'Futures', 'window_s': 900, 'resample': '1s'},
+        group="Activity",
+        description="Rolling sum over window.",
+        depends_on=(Dep(name="trade_count_fut_1s", kind="col"),),
+        feature_id=1028,
+    ),
+    FeatureSpec(
+        name="trade_count_spot_300s",
+        stage="S1",
+        operator="derived.roll_sum",
+        params={'market_scope': 'Spot', 'window_s': 300, 'resample': '1s'},
+        group="Activity",
+        description="Rolling sum over window.",
+        depends_on=(Dep(name="trade_count_spot_1s", kind="col"),),
+        feature_id=1029,
+    ),
+    FeatureSpec(
+        name="trade_count_spot_60s",
+        stage="S1",
+        operator="derived.roll_sum",
+        params={'market_scope': 'Spot', 'window_s': 60, 'resample': '1s'},
+        group="Activity",
+        description="Rolling sum over window.",
+        depends_on=(Dep(name="trade_count_spot_1s", kind="col"),),
+        feature_id=1030,
+    ),
+    FeatureSpec(
+        name="trade_count_spot_900s",
+        stage="S1",
+        operator="derived.roll_sum",
+        params={'market_scope': 'Spot', 'window_s': 900, 'resample': '1s'},
+        group="Activity",
+        description="Rolling sum over window.",
+        depends_on=(Dep(name="trade_count_spot_1s", kind="col"),),
+        feature_id=1031,
+    ),
+    FeatureSpec(
+        name="volume_fut_300s",
+        stage="S1",
+        operator="derived.roll_sum",
+        params={'market_scope': 'Futures', 'window_s': 300, 'resample': '1s'},
+        group="Activity",
+        description="Rolling sum over window.",
+        depends_on=(Dep(name="volume_fut_1s", kind="col"),),
+        feature_id=1032,
+    ),
+    FeatureSpec(
+        name="volume_fut_60s",
+        stage="S1",
+        operator="derived.roll_sum",
+        params={'market_scope': 'Futures', 'window_s': 60, 'resample': '1s'},
+        group="Activity",
+        description="Rolling sum over window.",
+        depends_on=(Dep(name="volume_fut_1s", kind="col"),),
+        feature_id=1033,
+    ),
+    FeatureSpec(
+        name="volume_fut_900s",
+        stage="S1",
+        operator="derived.roll_sum",
+        params={'market_scope': 'Futures', 'window_s': 900, 'resample': '1s'},
+        group="Activity",
+        description="Rolling sum over window.",
+        depends_on=(Dep(name="volume_fut_1s", kind="col"),),
+        feature_id=1034,
+    ),
+    FeatureSpec(
+        name="volume_spot_300s",
+        stage="S1",
+        operator="derived.roll_sum",
+        params={'market_scope': 'Spot', 'window_s': 300, 'resample': '1s'},
+        group="Activity",
+        description="Rolling sum over window.",
+        depends_on=(Dep(name="volume_spot_1s", kind="col"),),
+        feature_id=1035,
+    ),
+    FeatureSpec(
+        name="volume_spot_60s",
+        stage="S1",
+        operator="derived.roll_sum",
+        params={'market_scope': 'Spot', 'window_s': 60, 'resample': '1s'},
+        group="Activity",
+        description="Rolling sum over window.",
+        depends_on=(Dep(name="volume_spot_1s", kind="col"),),
+        feature_id=1036,
+    ),
+    FeatureSpec(
+        name="volume_spot_900s",
+        stage="S1",
+        operator="derived.roll_sum",
+        params={'market_scope': 'Spot', 'window_s': 900, 'resample': '1s'},
+        group="Activity",
+        description="Rolling sum over window.",
+        depends_on=(Dep(name="volume_spot_1s", kind="col"),),
+        feature_id=1037,
+    ),
+]

@@ -1,0 +1,11 @@
+# Path configuration for crypto-microstructure.
+#
+# data_root: absolute path to the external feature/data store (raw_data, s0..s6_features,
+#            ml_features_log1p, ...). This store is ~94 GB and is NOT part of this repository.
+#            Leave null to fall back to ./sample_data (only the ingestion demo runs then).
+# reduction_dir: where the feature-reduction CSVs live (feature_catalog, consolidated_drop_list,
+#            feature_keep, feature_keep). Committed under results/selection.
+# results_dir: root for small committed result artifacts.
+data_root: null
+reduction_dir: results/selection
+results_dir: results

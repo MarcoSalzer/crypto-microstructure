@@ -1,0 +1,510 @@
+# S4 Normalization Features
+# ==============================================================================
+# Overview:
+#   Robust z-score normalization (median/MAD based, NOT mean/std) for
+#   microstructure signals. Heavy-tailed distributions in HFT data make
+#   mean/std unreliable; we use robust statistics throughout.
+#
+#   Sub-families:
+#   1) z_absorb_refill_mid_{fut}_{2,5}bps_60s: Normalized refill mid-rate (60s window).
+#   2) z_depth_gradient_{fut,spot}_struct{50,100}_{60,300,900,3600}s (16):
+#      Normalized structural depth gradients.
+#   3) z_liq_concentration_{fut,spot}_struct{50,100}_{60,300,900,3600}s (16):
+#      Normalized liquidity concentration.
+#   4) z_net_add_{fut,spot}_5bps_{900,3600}s (4):
+#      Normalized net add pressure.
+#   5) z_net_cancel_{fut,spot}_5bps_{900,3600}s (4):
+#      Normalized net cancel pressure.
+#   6) z_trade_absorption_ratio_{fut,spot}_{60,900}s:
+#      Normalized trade absorption ratio.
+#
+# Operators used:
+#   - derived.robust_zscore : (x - rolling_median) / (1.4826 * rolling_MAD + eps)
+#
+# Dependencies: S3 depth_gradient, liq_concentration, net_add, net_cancel,
+#               absorb_refill_mid, trade_absorption_ratio
+# ==============================================================================
+
+from typing import List
+from etl.spec import FeatureSpec, Dep
+
+S4_NORMALIZATION_FEATURES: List[FeatureSpec] = [
+
+    # === derived.robust_zscore ===
+
+    FeatureSpec(
+        name="z_absorb_refill_mid_fut_2bps_60s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "absorb_refill_mid_fut_2bps_1s",
+                 "window_s": "60"},
+        label="Z Absorb Refill Mid Fut 2Bps 60S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of absorb_refill_mid_fut_2bps_1s over 60s window.",
+        depends_on=(Dep(name="absorb_refill_mid_fut_2bps_1s", kind="col"),),
+        feature_id=4166,
+    ),
+
+    FeatureSpec(
+        name="z_absorb_refill_mid_fut_5bps_60s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "absorb_refill_mid_fut_5bps_1s",
+                 "window_s": "60"},
+        label="Z Absorb Refill Mid Fut 5Bps 60S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of absorb_refill_mid_fut_5bps_1s over 60s window.",
+        depends_on=(Dep(name="absorb_refill_mid_fut_5bps_1s", kind="col"),),
+        feature_id=4167,
+    ),
+
+    FeatureSpec(
+        name="z_depth_gradient_fut_struct100_300s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "depth_gradient_fut_struct100_300s",
+                 "window_s": "300"},
+        label="Z Depth Gradient Fut Struct100 300S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of depth_gradient_fut_struct100_300s.",
+        depends_on=(Dep(name="depth_gradient_fut_struct100_300s", kind="col"),),
+        feature_id=4168,
+    ),
+
+    FeatureSpec(
+        name="z_depth_gradient_fut_struct100_60s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "depth_gradient_fut_struct100_60s",
+                 "window_s": "60"},
+        label="Z Depth Gradient Fut Struct100 60S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of depth_gradient_fut_struct100_60s.",
+        depends_on=(Dep(name="depth_gradient_fut_struct100_60s", kind="col"),),
+        feature_id=4169,
+    ),
+
+    FeatureSpec(
+        name="z_depth_gradient_fut_struct100_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "depth_gradient_fut_struct100_900s",
+                 "window_s": "900"},
+        label="Z Depth Gradient Fut Struct100 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of depth_gradient_fut_struct100_900s.",
+        depends_on=(Dep(name="depth_gradient_fut_struct100_900s", kind="col"),),
+        feature_id=4170,
+    ),
+
+    FeatureSpec(
+        name="z_depth_gradient_fut_struct50_300s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "depth_gradient_fut_struct50_300s",
+                 "window_s": "300"},
+        label="Z Depth Gradient Fut Struct50 300S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of depth_gradient_fut_struct50_300s.",
+        depends_on=(Dep(name="depth_gradient_fut_struct50_300s", kind="col"),),
+        feature_id=4171,
+    ),
+
+    FeatureSpec(
+        name="z_depth_gradient_fut_struct50_60s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "depth_gradient_fut_struct50_60s",
+                 "window_s": "60"},
+        label="Z Depth Gradient Fut Struct50 60S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of depth_gradient_fut_struct50_60s.",
+        depends_on=(Dep(name="depth_gradient_fut_struct50_60s", kind="col"),),
+        feature_id=4172,
+    ),
+
+    FeatureSpec(
+        name="z_depth_gradient_fut_struct50_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "depth_gradient_fut_struct50_900s",
+                 "window_s": "900"},
+        label="Z Depth Gradient Fut Struct50 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of depth_gradient_fut_struct50_900s.",
+        depends_on=(Dep(name="depth_gradient_fut_struct50_900s", kind="col"),),
+        feature_id=4173,
+    ),
+
+    FeatureSpec(
+        name="z_depth_gradient_spot_struct100_300s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "depth_gradient_spot_struct100_300s",
+                 "window_s": "300"},
+        label="Z Depth Gradient Spot Struct100 300S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of depth_gradient_spot_struct100_300s.",
+        depends_on=(Dep(name="depth_gradient_spot_struct100_300s", kind="col"),),
+        feature_id=4174,
+    ),
+
+    FeatureSpec(
+        name="z_depth_gradient_spot_struct100_60s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "depth_gradient_spot_struct100_60s",
+                 "window_s": "60"},
+        label="Z Depth Gradient Spot Struct100 60S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of depth_gradient_spot_struct100_60s.",
+        depends_on=(Dep(name="depth_gradient_spot_struct100_60s", kind="col"),),
+        feature_id=4175,
+    ),
+
+    FeatureSpec(
+        name="z_depth_gradient_spot_struct100_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "depth_gradient_spot_struct100_900s",
+                 "window_s": "900"},
+        label="Z Depth Gradient Spot Struct100 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of depth_gradient_spot_struct100_900s.",
+        depends_on=(Dep(name="depth_gradient_spot_struct100_900s", kind="col"),),
+        feature_id=4176,
+    ),
+
+    FeatureSpec(
+        name="z_depth_gradient_spot_struct50_300s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "depth_gradient_spot_struct50_300s",
+                 "window_s": "300"},
+        label="Z Depth Gradient Spot Struct50 300S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of depth_gradient_spot_struct50_300s.",
+        depends_on=(Dep(name="depth_gradient_spot_struct50_300s", kind="col"),),
+        feature_id=4177,
+    ),
+
+    FeatureSpec(
+        name="z_depth_gradient_spot_struct50_60s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "depth_gradient_spot_struct50_60s",
+                 "window_s": "60"},
+        label="Z Depth Gradient Spot Struct50 60S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of depth_gradient_spot_struct50_60s.",
+        depends_on=(Dep(name="depth_gradient_spot_struct50_60s", kind="col"),),
+        feature_id=4178,
+    ),
+
+    FeatureSpec(
+        name="z_depth_gradient_spot_struct50_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "depth_gradient_spot_struct50_900s",
+                 "window_s": "900"},
+        label="Z Depth Gradient Spot Struct50 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of depth_gradient_spot_struct50_900s.",
+        depends_on=(Dep(name="depth_gradient_spot_struct50_900s", kind="col"),),
+        feature_id=4179,
+    ),
+
+    FeatureSpec(
+        name="z_liq_concentration_fut_struct100_300s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "liq_concentration_fut_struct100_300s",
+                 "window_s": "300"},
+        label="Z Liq Concentration Fut Struct100 300S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of liq_concentration_fut_struct100_300s.",
+        depends_on=(Dep(name="liq_concentration_fut_struct100_300s", kind="col"),),
+        feature_id=4180,
+    ),
+
+    FeatureSpec(
+        name="z_liq_concentration_fut_struct100_60s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "liq_concentration_fut_struct100_60s",
+                 "window_s": "60"},
+        label="Z Liq Concentration Fut Struct100 60S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of liq_concentration_fut_struct100_60s.",
+        depends_on=(Dep(name="liq_concentration_fut_struct100_60s", kind="col"),),
+        feature_id=4181,
+    ),
+
+    FeatureSpec(
+        name="z_liq_concentration_fut_struct100_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "liq_concentration_fut_struct100_900s",
+                 "window_s": "900"},
+        label="Z Liq Concentration Fut Struct100 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of liq_concentration_fut_struct100_900s.",
+        depends_on=(Dep(name="liq_concentration_fut_struct100_900s", kind="col"),),
+        feature_id=4182,
+    ),
+
+    FeatureSpec(
+        name="z_liq_concentration_fut_struct50_300s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "liq_concentration_fut_struct50_300s",
+                 "window_s": "300"},
+        label="Z Liq Concentration Fut Struct50 300S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of liq_concentration_fut_struct50_300s.",
+        depends_on=(Dep(name="liq_concentration_fut_struct50_300s", kind="col"),),
+        feature_id=4183,
+    ),
+
+    FeatureSpec(
+        name="z_liq_concentration_fut_struct50_60s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "liq_concentration_fut_struct50_60s",
+                 "window_s": "60"},
+        label="Z Liq Concentration Fut Struct50 60S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of liq_concentration_fut_struct50_60s.",
+        depends_on=(Dep(name="liq_concentration_fut_struct50_60s", kind="col"),),
+        feature_id=4184,
+    ),
+
+    FeatureSpec(
+        name="z_liq_concentration_fut_struct50_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "liq_concentration_fut_struct50_900s",
+                 "window_s": "900"},
+        label="Z Liq Concentration Fut Struct50 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of liq_concentration_fut_struct50_900s.",
+        depends_on=(Dep(name="liq_concentration_fut_struct50_900s", kind="col"),),
+        feature_id=4185,
+    ),
+
+    FeatureSpec(
+        name="z_liq_concentration_spot_struct100_300s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "liq_concentration_spot_struct100_300s",
+                 "window_s": "300"},
+        label="Z Liq Concentration Spot Struct100 300S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of liq_concentration_spot_struct100_300s.",
+        depends_on=(Dep(name="liq_concentration_spot_struct100_300s", kind="col"),),
+        feature_id=4186,
+    ),
+
+    FeatureSpec(
+        name="z_liq_concentration_spot_struct100_60s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "liq_concentration_spot_struct100_60s",
+                 "window_s": "60"},
+        label="Z Liq Concentration Spot Struct100 60S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of liq_concentration_spot_struct100_60s.",
+        depends_on=(Dep(name="liq_concentration_spot_struct100_60s", kind="col"),),
+        feature_id=4187,
+    ),
+
+    FeatureSpec(
+        name="z_liq_concentration_spot_struct100_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "liq_concentration_spot_struct100_900s",
+                 "window_s": "900"},
+        label="Z Liq Concentration Spot Struct100 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of liq_concentration_spot_struct100_900s.",
+        depends_on=(Dep(name="liq_concentration_spot_struct100_900s", kind="col"),),
+        feature_id=4188,
+    ),
+
+    FeatureSpec(
+        name="z_liq_concentration_spot_struct50_300s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "liq_concentration_spot_struct50_300s",
+                 "window_s": "300"},
+        label="Z Liq Concentration Spot Struct50 300S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of liq_concentration_spot_struct50_300s.",
+        depends_on=(Dep(name="liq_concentration_spot_struct50_300s", kind="col"),),
+        feature_id=4189,
+    ),
+
+    FeatureSpec(
+        name="z_liq_concentration_spot_struct50_60s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "liq_concentration_spot_struct50_60s",
+                 "window_s": "60"},
+        label="Z Liq Concentration Spot Struct50 60S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of liq_concentration_spot_struct50_60s.",
+        depends_on=(Dep(name="liq_concentration_spot_struct50_60s", kind="col"),),
+        feature_id=4190,
+    ),
+
+    FeatureSpec(
+        name="z_liq_concentration_spot_struct50_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "liq_concentration_spot_struct50_900s",
+                 "window_s": "900"},
+        label="Z Liq Concentration Spot Struct50 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of liq_concentration_spot_struct50_900s.",
+        depends_on=(Dep(name="liq_concentration_spot_struct50_900s", kind="col"),),
+        feature_id=4191,
+    ),
+
+    FeatureSpec(
+        name="z_net_add_fut_5bps_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "net_add_fut_5bps_900s",
+                 "window_s": "900"},
+        label="Z Net Add Fut 5Bps 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of net_add_fut_5bps_900s.",
+        depends_on=(Dep(name="net_add_fut_5bps_900s", kind="col"),),
+        feature_id=4192,
+    ),
+
+    FeatureSpec(
+        name="z_net_add_spot_5bps_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "net_add_spot_5bps_900s",
+                 "window_s": "900"},
+        label="Z Net Add Spot 5Bps 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of net_add_spot_5bps_900s.",
+        depends_on=(Dep(name="net_add_spot_5bps_900s", kind="col"),),
+        feature_id=4193,
+    ),
+
+    FeatureSpec(
+        name="z_net_cancel_fut_5bps_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "net_cancel_fut_5bps_900s",
+                 "window_s": "900"},
+        label="Z Net Cancel Fut 5Bps 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of net_cancel_fut_5bps_900s.",
+        depends_on=(Dep(name="net_cancel_fut_5bps_900s", kind="col"),),
+        feature_id=4194,
+    ),
+
+    FeatureSpec(
+        name="z_net_cancel_spot_5bps_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "net_cancel_spot_5bps_900s",
+                 "window_s": "900"},
+        label="Z Net Cancel Spot 5Bps 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of net_cancel_spot_5bps_900s.",
+        depends_on=(Dep(name="net_cancel_spot_5bps_900s", kind="col"),),
+        feature_id=4195,
+    ),
+
+    FeatureSpec(
+        name="z_trade_absorption_ratio_fut_60s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "trade_absorption_ratio_fut_60s",
+                 "window_s": "60"},
+        label="Z Trade Absorption Ratio Fut 60S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of trade_absorption_ratio_fut_60s.",
+        depends_on=(Dep(name="trade_absorption_ratio_fut_60s", kind="col"),),
+        feature_id=4196,
+    ),
+
+    FeatureSpec(
+        name="z_trade_absorption_ratio_fut_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Futures",
+                 "input_col": "trade_absorption_ratio_fut_900s",
+                 "window_s": "900"},
+        label="Z Trade Absorption Ratio Fut 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of trade_absorption_ratio_fut_900s.",
+        depends_on=(Dep(name="trade_absorption_ratio_fut_900s", kind="col"),),
+        feature_id=4197,
+    ),
+
+    FeatureSpec(
+        name="z_trade_absorption_ratio_spot_60s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "trade_absorption_ratio_spot_60s",
+                 "window_s": "60"},
+        label="Z Trade Absorption Ratio Spot 60S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of trade_absorption_ratio_spot_60s.",
+        depends_on=(Dep(name="trade_absorption_ratio_spot_60s", kind="col"),),
+        feature_id=4198,
+    ),
+
+    FeatureSpec(
+        name="z_trade_absorption_ratio_spot_900s",
+        stage="S4",
+        operator="derived.robust_zscore",
+        params={"market_scope": "Spot",
+                 "input_col": "trade_absorption_ratio_spot_900s",
+                 "window_s": "900"},
+        label="Z Trade Absorption Ratio Spot 900S (Binance)",
+        group="Normalization",
+        description="Robust z-score (median/MAD) of trade_absorption_ratio_spot_900s.",
+        depends_on=(Dep(name="trade_absorption_ratio_spot_900s", kind="col"),),
+        feature_id=4199,
+    ),
+]

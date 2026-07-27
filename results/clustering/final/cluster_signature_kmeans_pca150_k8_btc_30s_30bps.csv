@@ -1,0 +1,401 @@
+cluster,n,rank,feature,bare_name,family,bundle,z_score,cluster_mean,global_mean
+0,85,1,mad_net_pressure_spot_1bps_60s_btc,mad_net_pressure_spot_1bps_60s,Dynamics,B5_dynamics,5.3539,1.060848,0.092617
+0,85,2,fill_rate_ahead_fut_1bps_15s_eth,fill_rate_ahead_fut_1bps_15s,Liquidity Events,B3_flow,4.4469,697983.4375,36829.480469
+0,85,3,median_net_pressure_spot_1bps_60s_btc,median_net_pressure_spot_1bps_60s,Dynamics,B5_dynamics,-4.0822,-1.859351,-0.020269
+0,85,4,reclaimed_week_open_900s_fut_btc,reclaimed_week_open_900s_fut,Level Events,B6_context,3.9798,0.964706,0.055278
+0,85,5,median_pull_rate_fut_5bps_60s_eth,median_pull_rate_fut_5bps_60s,Dynamics,B5_dynamics,3.6061,10.067739,0.825452
+0,85,6,depth_gradient_bid_fut_struct50_60s_btc,depth_gradient_bid_fut_struct50_60s,Bookshape,B2_bookshape,3.5657,13.445781,2.062623
+0,85,7,fill_rate_ahead_spot_1bps_15s_eth,fill_rate_ahead_spot_1bps_15s,Liquidity Events,B3_flow,3.4927,485166.21875,57463.871094
+0,85,8,refill_rate_fut_10bps_60s_btc,refill_rate_fut_10bps_60s,Liquidity Events,B3_flow,3.4705,0.153763,0.06741
+0,85,9,notional_fut_1s_eth,notional_fut_1s,Activity,B3_flow,-3.4243,3.355521,13.296584
+0,85,10,taker_buy_notional_fut_1s_eth,taker_buy_notional_fut_1s,Aggression,B1_imbalance,-3.2765,3.155645,12.501525
+0,85,11,taker_sell_notional_fut_1s_eth,taker_sell_notional_fut_1s,Aggression,B1_imbalance,-3.2597,3.164371,12.413115
+0,85,12,refill_rate_fut_5bps_60s_btc,refill_rate_fut_5bps_60s,Liquidity Events,B3_flow,3.1867,0.226847,0.114912
+0,85,13,absorption_volume_bid_fut_1bps_1s_eth,absorption_volume_bid_fut_1bps_1s,Absorption,B3_flow,-3.1419,3.658721,16.535238
+0,85,14,pull_rate_fut_5bps_60s_eth,pull_rate_fut_5bps_60s,Liquidity Events,B3_flow,3.1366,9.992864,1.063396
+0,85,15,absorption_volume_ask_fut_1bps_1s_eth,absorption_volume_ask_fut_1bps_1s,Absorption,B3_flow,-3.0837,3.855764,16.452936
+0,85,16,median_pull_rate_fut_5bps_60s_btc,median_pull_rate_fut_5bps_60s,Dynamics,B5_dynamics,3.0715,9.058141,0.874173
+0,85,17,median_refill_rate_fut_10bps_60s_btc,median_refill_rate_fut_10bps_60s,Dynamics,B5_dynamics,3.0355,0.138807,0.054681
+0,85,18,trade_count_fut_1s_eth,trade_count_fut_1s,Activity,B3_flow,-3.0278,1.603107,6.255653
+0,85,19,net_pressure_spot_1bps_60s_btc,net_pressure_spot_1bps_60s,Pressure,B1_imbalance,-2.9948,-1.578989,-0.013135
+0,85,20,notional_fut_1s_btc,notional_fut_1s,Activity,B3_flow,-2.8236,8.694899,14.087685
+0,85,21,refill_rate_fut_5bps_60s_eth,refill_rate_fut_5bps_60s,Liquidity Events,B3_flow,2.7899,0.245756,0.12744
+0,85,22,absorption_volume_bid_fut_1bps_15s_eth,absorption_volume_bid_fut_1bps_15s,Absorption,B3_flow,-2.7854,11.538662,18.124737
+0,85,23,mad_pull_rate_fut_5bps_60s_btc,mad_pull_rate_fut_5bps_60s,Dynamics,B5_dynamics,2.7501,8.024815,0.851772
+0,85,24,median_refill_rate_fut_5bps_60s_btc,median_refill_rate_fut_5bps_60s,Dynamics,B5_dynamics,2.743,0.205595,0.096182
+0,85,25,absorption_volume_bid_spot_1bps_15s_eth,absorption_volume_bid_spot_1bps_15s,Absorption,B3_flow,-2.694,9.669197,14.077655
+0,85,26,mad_refill_rate_fut_5bps_60s_btc,mad_refill_rate_fut_5bps_60s,Dynamics,B5_dynamics,2.674,0.048005,0.014083
+0,85,27,broke_prev_day_high_300s_fut_btc,broke_prev_day_high_300s_fut,Level Events,B6_context,2.668,0.976471,0.117465
+0,85,28,absorption_volume_ask_spot_1bps_15s_eth,absorption_volume_ask_spot_1bps_15s,Absorption,B3_flow,-2.6412,9.757533,13.947937
+0,85,29,absorption_volume_ask_fut_1bps_15s_eth,absorption_volume_ask_fut_1bps_15s,Absorption,B3_flow,-2.6205,11.758639,17.96764
+0,85,30,volume_fut_1s_eth,volume_fut_1s,Activity,B3_flow,-2.5683,1.571998,5.941297
+0,85,31,taker_buy_notional_fut_1s_btc,taker_buy_notional_fut_1s,Aggression,B1_imbalance,-2.5653,8.042486,13.2287
+0,85,32,trade_count_fut_share_1s_eth,trade_count_fut_share_1s,Cross-Market,B4_cross_market,-2.5065,0.179734,0.623462
+0,85,33,taker_sell_notional_fut_1s_btc,taker_sell_notional_fut_1s,Aggression,B1_imbalance,-2.4626,8.291302,13.152852
+0,85,34,pull_rate_fut_5bps_60s_btc,pull_rate_fut_5bps_60s,Liquidity Events,B3_flow,2.4554,7.702434,0.971914
+0,85,35,refill_rate_fut_10bps_60s_eth,refill_rate_fut_10bps_60s,Liquidity Events,B3_flow,2.4313,0.145054,0.074181
+0,85,36,broke_prev_day_high_900s_fut_btc,broke_prev_day_high_900s_fut,Level Events,B6_context,2.4144,0.976471,0.139624
+0,85,37,trade_count_fut_share_300s_btc,trade_count_fut_share_300s,Cross-Market,B4_cross_market,-2.3654,0.469141,0.598979
+0,85,38,pull_rate_spot_2bps_60s_eth,pull_rate_spot_2bps_60s,Liquidity Events,B3_flow,2.3506,0.731556,0.397946
+0,85,39,absorption_volume_bid_fut_1bps_1s_btc,absorption_volume_bid_fut_1bps_1s,Absorption,B3_flow,-2.3466,8.629539,14.840438
+0,85,40,depth_gradient_bid_spot_struct50_900s_btc,depth_gradient_bid_spot_struct50_900s,Bookshape,B2_bookshape,2.3379,308.25943,129.442276
+0,85,41,refill_rate_spot_5bps_60s_eth,refill_rate_spot_5bps_60s,Liquidity Events,B3_flow,2.2928,0.223565,0.134304
+0,85,42,mad_net_pressure_spot_1bps_60s_eth,mad_net_pressure_spot_1bps_60s,Dynamics,B5_dynamics,2.2552,0.24768,0.081678
+0,85,43,absorption_volume_bid_fut_1bps_15s_btc,absorption_volume_bid_fut_1bps_15s,Absorption,B3_flow,-2.2548,12.508894,16.0875
+0,85,44,median_refill_rate_fut_5bps_60s_eth,median_refill_rate_fut_5bps_60s,Dynamics,B5_dynamics,2.248,0.208965,0.107502
+0,85,45,liq_concentration_bid_spot_struct50_900s_btc,liq_concentration_bid_spot_struct50_900s,Bookshape,B2_bookshape,-2.2216,588.30542,767.75061
+0,85,46,trade_count_sf_share_60s_eth,trade_count_sf_share_60s,Cross-Market,B4_cross_market,-2.1979,0.511119,0.649107
+0,85,47,taker_buy_vol_fut_1s_eth,taker_buy_vol_fut_1s,Aggression,B1_imbalance,-2.1869,1.375666,5.157121
+0,85,48,mad_pull_rate_fut_5bps_15s_btc,mad_pull_rate_fut_5bps_15s,Dynamics,B5_dynamics,2.1781,3.307335,0.234031
+0,85,49,mad_refill_rate_fut_10bps_60s_btc,mad_refill_rate_fut_10bps_60s,Dynamics,B5_dynamics,2.1769,0.03371,0.009672
+0,85,50,taker_sell_vol_fut_1s_eth,taker_sell_vol_fut_1s,Aggression,B1_imbalance,-2.172,1.381437,5.07401
+1,1006,1,median_impact_per_signed_spot_5s_btc,median_impact_per_signed_spot_5s,Dynamics,B5_dynamics,0.9911,0.000425,0.000223
+1,1006,2,mad_impact_per_signed_spot_15s_btc,mad_impact_per_signed_spot_15s,Dynamics,B5_dynamics,0.8843,0.000643,0.000395
+1,1006,3,median_impact_per_signed_spot_15s_btc,median_impact_per_signed_spot_15s,Dynamics,B5_dynamics,0.8793,0.000555,0.000328
+1,1006,4,mad_impact_per_signed_fut_5s_btc,mad_impact_per_signed_fut_5s,Dynamics,B5_dynamics,0.846,4.4e-05,3e-05
+1,1006,5,depth_gradient_ask_spot_struct100_300s_eth,depth_gradient_ask_spot_struct100_300s,Bookshape,B2_bookshape,-0.816,66.665108,86.083572
+1,1006,6,depth_gradient_ask_spot_struct100_900s_eth,depth_gradient_ask_spot_struct100_900s,Bookshape,B2_bookshape,-0.7951,206.859451,258.567688
+1,1006,7,median_impact_per_signed_spot_5s_eth,median_impact_per_signed_spot_5s,Dynamics,B5_dynamics,0.7795,2.7e-05,1.8e-05
+1,1006,8,mad_impact_per_signed_fut_15s_btc,mad_impact_per_signed_fut_15s,Dynamics,B5_dynamics,0.7594,4.8e-05,3.4e-05
+1,1006,9,liq_concentration_ask_spot_struct100_300s_eth,liq_concentration_ask_spot_struct100_300s,Bookshape,B2_bookshape,0.7195,229.895615,212.933044
+1,1006,10,depth_gradient_ask_spot_struct100_60s_eth,depth_gradient_ask_spot_struct100_60s,Bookshape,B2_bookshape,-0.7066,13.204505,16.869856
+1,1006,11,liq_concentration_ask_spot_struct100_900s_eth,liq_concentration_ask_spot_struct100_900s,Bookshape,B2_bookshape,0.6984,683.86377,638.742371
+1,1006,12,median_refill_rate_spot_1bps_60s_btc,median_refill_rate_spot_1bps_60s,Dynamics,B5_dynamics,0.681,0.381028,0.311988
+1,1006,13,median_refill_rate_spot_1bps_60s_eth,median_refill_rate_spot_1bps_60s,Dynamics,B5_dynamics,0.6726,0.421818,0.356167
+1,1006,14,median_refill_rate_fut_1bps_60s_btc,median_refill_rate_fut_1bps_60s,Dynamics,B5_dynamics,0.6719,0.356059,0.299754
+1,1006,15,queue_pressure_persist_fut_1bps_900s_btc,queue_pressure_persist_fut_1bps_900s,Dynamics,B5_dynamics,-0.6687,0.19677,0.332607
+1,1006,16,queue_pressure_persist_fut_1bps_300s_btc,queue_pressure_persist_fut_1bps_300s,Dynamics,B5_dynamics,-0.6633,0.131706,0.263127
+1,1006,17,liq_concentration_ask_spot_struct100_60s_eth,liq_concentration_ask_spot_struct100_60s,Bookshape,B2_bookshape,0.6614,46.429691,43.016209
+1,1006,18,median_impact_per_signed_fut_5s_btc,median_impact_per_signed_fut_5s,Dynamics,B5_dynamics,0.661,3.3e-05,2.3e-05
+1,1006,19,spot_fut_taker_activity_share_900s_btc,spot_fut_taker_activity_share_900s,Cross-Market,B4_cross_market,-0.6593,0.103167,0.12828
+1,1006,20,queue_pressure_persist_spot_1bps_900s_eth,queue_pressure_persist_spot_1bps_900s,Dynamics,B5_dynamics,-0.6565,0.271497,0.403223
+1,1006,21,net_pressure_persist_fut_5bps_300s_btc,net_pressure_persist_fut_5bps_300s,Dynamics,B5_dynamics,-0.6438,0.370126,0.395868
+1,1006,22,queue_pressure_persist_spot_1bps_300s_eth,queue_pressure_persist_spot_1bps_300s,Dynamics,B5_dynamics,-0.6436,0.186542,0.318401
+1,1006,23,median_impact_per_signed_spot_15s_eth,median_impact_per_signed_spot_15s,Dynamics,B5_dynamics,0.6435,3.4e-05,2.5e-05
+1,1006,24,volume_spot_60s_btc,volume_spot_60s,Activity,B3_flow,-0.6423,4.276298,4.744121
+1,1006,25,price_vs_ema_200_240m_bps_fut_btc,price_vs_ema_200_240m_bps_fut,Trend,B6_context,-0.6393,-70.568916,182.266403
+1,1006,26,liq_concentration_bid_fut_struct50_900s_eth,liq_concentration_bid_fut_struct50_900s,Bookshape,B2_bookshape,-0.639,228.018951,258.364471
+1,1006,27,median_refill_rate_spot_5bps_60s_btc,median_refill_rate_spot_5bps_60s,Dynamics,B5_dynamics,0.6337,0.127143,0.10151
+1,1006,28,mad_impact_per_signed_fut_5s_eth,mad_impact_per_signed_fut_5s,Dynamics,B5_dynamics,0.6296,3e-06,2e-06
+1,1006,29,queue_pressure_persist_spot_1bps_900s_btc,queue_pressure_persist_spot_1bps_900s,Dynamics,B5_dynamics,-0.6248,0.303341,0.433624
+1,1006,30,trend_aligned_15m_fut_eth,trend_aligned_15m_fut,Trend,B6_context,-0.6209,-0.399602,0.093877
+1,1006,31,queue_pressure_persist_spot_1bps_300s_btc,queue_pressure_persist_spot_1bps_300s,Dynamics,B5_dynamics,-0.6198,0.229188,0.35861
+1,1006,32,net_pressure_persist_spot_5bps_300s_eth,net_pressure_persist_spot_5bps_300s,Dynamics,B5_dynamics,-0.619,0.374924,0.401887
+1,1006,33,trade_count_spot_900s_btc,trade_count_spot_900s,Activity,B3_flow,0.6166,11.86245,11.508122
+1,1006,34,net_pressure_persist_spot_5bps_300s_btc,net_pressure_persist_spot_5bps_300s,Dynamics,B5_dynamics,-0.6074,0.378128,0.405412
+1,1006,35,above_prev_day_high_fut_btc,above_prev_day_high_fut,Level Events,B6_context,-0.607,0.089463,0.384799
+1,1006,36,depth_notional_ask_struct100_spot_300s_eth,depth_notional_ask_struct100_spot_300s,Bookshape,B2_bookshape,-0.6054,5915392.5,6845055.0
+1,1006,37,trade_count_spot_share_60s_btc,trade_count_spot_share_60s,Cross-Market,B4_cross_market,0.6048,0.428814,0.394399
+1,1006,38,liq_concentration_bid_fut_struct50_300s_eth,liq_concentration_bid_fut_struct50_300s,Bookshape,B2_bookshape,-0.6027,74.4459,84.57621
+1,1006,39,refill_rate_spot_2bps_60s_eth,refill_rate_spot_2bps_60s,Liquidity Events,B3_flow,0.602,0.362334,0.318489
+1,1006,40,above_prev_day_high_fut_eth,above_prev_day_high_fut,Level Events,B6_context,-0.599,0.030815,0.307124
+1,1006,41,absorption_volume_bid_spot_1bps_60s_btc,absorption_volume_bid_spot_1bps_60s,Absorption,B3_flow,-0.5942,15.658982,16.372168
+1,1006,42,trade_count_spot_900s_eth,trade_count_spot_900s,Activity,B3_flow,0.5936,11.995862,11.613647
+1,1006,43,net_pressure_persist_fut_5bps_300s_eth,net_pressure_persist_fut_5bps_300s,Dynamics,B5_dynamics,-0.5883,0.36564,0.388914
+1,1006,44,liq_concentration_bid_spot_struct50_900s_btc,liq_concentration_bid_spot_struct50_900s,Bookshape,B2_bookshape,-0.5856,720.451904,767.75061
+1,1006,45,absorption_volume_ask_spot_1bps_60s_btc,absorption_volume_ask_spot_1bps_60s,Absorption,B3_flow,-0.5842,15.538306,16.204607
+1,1006,46,price_vs_ema_200_5m_bps_fut_btc,price_vs_ema_200_5m_bps_fut,Trend,B6_context,-0.5768,-46.279064,55.114399
+1,1006,47,ema_slope_200_15m_bps_fut_eth,ema_slope_200_15m_bps_fut,Trend,B6_context,-0.5749,-0.810927,0.643307
+1,1006,48,spot_fut_taker_activity_share_300s_btc,spot_fut_taker_activity_share_300s,Cross-Market,B4_cross_market,-0.5746,0.091294,0.117952
+1,1006,49,median_refill_rate_spot_10bps_60s_btc,median_refill_rate_spot_10bps_60s,Dynamics,B5_dynamics,0.573,0.066633,0.052739
+1,1006,50,volume_fut_60s_btc,volume_fut_60s,Activity,B3_flow,-0.5698,6.757349,7.146103
+2,909,1,ema_slope_50_15m_bps_fut_btc,ema_slope_50_15m_bps_fut,Trend,B6_context,1.1879,7.69426,1.492067
+2,909,2,ema_slope_50_15m_bps_fut_eth,ema_slope_50_15m_bps_fut,Trend,B6_context,1.1836,9.771195,1.768586
+2,909,3,price_vs_ema_200_5m_bps_fut_btc,price_vs_ema_200_5m_bps_fut,Trend,B6_context,1.1437,256.152924,55.114399
+2,909,4,price_vs_ema_50_15m_bps_fut_btc,price_vs_ema_50_15m_bps_fut,Trend,B6_context,1.1263,232.355942,49.637657
+2,909,5,price_vs_va_1d_fut_eth,price_vs_va_1d_fut,Volume Profile,B6_context,1.0792,1.822882,1.078628
+2,909,6,price_vs_ema_200_15m_bps_fut_btc,price_vs_ema_200_15m_bps_fut,Trend,B6_context,1.0621,320.501099,78.245102
+2,909,7,price_vs_ema_50_60m_bps_fut_btc,price_vs_ema_50_60m_bps_fut,Trend,B6_context,1.0621,320.501099,78.245102
+2,909,8,ema_slope_200_15m_bps_fut_btc,ema_slope_200_15m_bps_fut,Trend,B6_context,1.0569,2.775388,0.655346
+2,909,9,price_vs_va_1d_fut_btc,price_vs_va_1d_fut,Volume Profile,B6_context,1.0284,1.749175,1.045985
+2,909,10,ema_slope_200_15m_bps_fut_eth,ema_slope_200_15m_bps_fut,Trend,B6_context,1.0135,3.207279,0.643307
+2,909,11,price_vs_ema_50_5m_bps_fut_btc,price_vs_ema_50_5m_bps_fut,Trend,B6_context,0.9488,150.828125,34.170139
+2,909,12,ema_slope_50_60m_bps_fut_btc,ema_slope_50_60m_bps_fut,Trend,B6_context,0.9231,9.187927,2.372326
+2,909,13,price_vs_va_240m_fut_eth,price_vs_va_240m_fut,Volume Profile,B6_context,0.8663,1.712871,1.115797
+2,909,14,ema_slope_50_60m_bps_fut_eth,ema_slope_50_60m_bps_fut,Trend,B6_context,0.8521,10.229206,2.23456
+2,909,15,price_vs_va_240m_fut_btc,price_vs_va_240m_fut,Volume Profile,B6_context,0.8187,1.669967,1.0934
+2,909,16,avg_trade_size_spot_900s_btc,avg_trade_size_spot_900s,Activity,B3_flow,-0.795,997.468811,1411.320312
+2,909,17,above_prev_day_high_fut_eth,above_prev_day_high_fut,Level Events,B6_context,0.7794,0.666667,0.307124
+2,909,18,price_vs_ema_50_240m_bps_fut_btc,price_vs_ema_50_240m_bps_fut,Trend,B6_context,0.7727,354.683228,113.782196
+2,909,19,price_vs_ema_200_60m_bps_fut_btc,price_vs_ema_200_60m_bps_fut,Trend,B6_context,0.7727,354.683228,113.782196
+2,909,20,above_prev_day_high_fut_btc,above_prev_day_high_fut,Level Events,B6_context,0.7466,0.748075,0.384799
+2,909,21,trade_count_spot_share_900s_eth,trade_count_spot_share_900s,Cross-Market,B4_cross_market,0.7329,0.355579,0.317585
+2,909,22,trade_count_sf_share_900s_eth,trade_count_sf_share_900s,Cross-Market,B4_cross_market,-0.7206,0.644236,0.681131
+2,909,23,net_pressure_persist_spot_5bps_300s_btc,net_pressure_persist_spot_5bps_300s,Dynamics,B5_dynamics,-0.7013,0.373913,0.405412
+2,909,24,trade_count_spot_900s_eth,trade_count_spot_900s,Activity,B3_flow,0.6994,12.063979,11.613647
+2,909,25,trade_count_spot_900s_btc,trade_count_spot_900s,Activity,B3_flow,0.6984,11.909408,11.508122
+2,909,26,trade_count_fut_share_900s_eth,trade_count_fut_share_900s,Cross-Market,B4_cross_market,-0.6868,0.643799,0.678005
+2,909,27,basis_vwap_sf_900s_eth,basis_vwap_sf_900s,Cross-Market,B4_cross_market,0.6805,-0.944565,-1.065789
+2,909,28,avg_trade_size_spot_300s_btc,avg_trade_size_spot_300s,Activity,B3_flow,-0.6732,886.608643,1212.321777
+2,909,29,price_vs_va_60m_fut_btc,price_vs_va_60m_fut,Volume Profile,B6_context,0.673,1.612761,1.126281
+2,909,30,trend_aligned_15m_fut_btc,trend_aligned_15m_fut,Trend,B6_context,0.6704,0.79648,0.248987
+2,909,31,price_vs_va_60m_fut_eth,price_vs_va_60m_fut,Volume Profile,B6_context,0.6678,1.576458,1.113414
+2,909,32,depth_gradient_ask_fut_struct100_900s_eth,depth_gradient_ask_fut_struct100_900s,Bookshape,B2_bookshape,0.6675,577.917725,549.626343
+2,909,33,trade_count_spot_share_300s_eth,trade_count_spot_share_300s,Cross-Market,B4_cross_market,0.6672,0.362847,0.326798
+2,909,34,liq_concentration_fut_struct50_300s_eth,liq_concentration_fut_struct50_300s,Bookshape,B2_bookshape,-0.658,0.870589,0.996464
+2,909,35,queue_pressure_persist_spot_1bps_900s_btc,queue_pressure_persist_spot_1bps_900s,Dynamics,B5_dynamics,-0.6536,0.29734,0.433624
+2,909,36,volume_spot_900s_btc,volume_spot_900s,Activity,B3_flow,0.6465,6.711798,6.311388
+2,909,37,trade_count_sf_share_300s_eth,trade_count_sf_share_300s,Cross-Market,B4_cross_market,-0.6444,0.637136,0.671781
+2,909,38,above_week_open_fut_btc,above_week_open_fut,Level Events,B6_context,0.6426,0.605061,0.308315
+2,909,39,queue_pressure_persist_spot_1bps_900s_eth,queue_pressure_persist_spot_1bps_900s,Dynamics,B5_dynamics,-0.6362,0.275569,0.403223
+2,909,40,depth_gradient_fut_struct100_300s_eth,depth_gradient_fut_struct100_300s,Bookshape,B2_bookshape,0.6317,1.038181,0.982759
+2,909,41,trend_aligned_15m_fut_eth,trend_aligned_15m_fut,Trend,B6_context,0.6307,0.59516,0.093877
+2,909,42,queue_pressure_persist_fut_1bps_900s_eth,queue_pressure_persist_fut_1bps_900s,Dynamics,B5_dynamics,-0.6285,0.136385,0.250946
+2,909,43,liq_concentration_ask_fut_struct100_900s_eth,liq_concentration_ask_fut_struct100_900s,Bookshape,B2_bookshape,-0.6284,321.817047,347.610565
+2,909,44,depth_gradient_ask_fut_struct100_300s_eth,depth_gradient_ask_fut_struct100_300s,Bookshape,B2_bookshape,0.6235,193.298157,183.614059
+2,909,45,depth_gradient_spot_struct100_900s_eth,depth_gradient_spot_struct100_900s,Bookshape,B2_bookshape,0.6185,1.258342,1.078737
+2,909,46,range_pct_fut_3600s_btc,range_pct_fut_3600s,Range,B6_context,0.6119,0.021705,0.016897
+2,909,47,ema_slope_200_60m_bps_fut_eth,ema_slope_200_60m_bps_fut,Trend,B6_context,0.6104,2.888186,0.928396
+2,909,48,queue_pressure_persist_fut_1bps_900s_btc,queue_pressure_persist_fut_1bps_900s,Dynamics,B5_dynamics,-0.6071,0.20929,0.332607
+2,909,49,ema_slope_200_60m_bps_fut_btc,ema_slope_200_60m_bps_fut,Trend,B6_context,0.6068,2.599503,0.940856
+2,909,50,trade_count_spot_300s_eth,trade_count_spot_300s,Activity,B3_flow,0.6062,11.194609,10.823793
+3,773,1,refill_rate_spot_2bps_60s_eth,refill_rate_spot_2bps_60s,Liquidity Events,B3_flow,-1.2145,0.230028,0.318489
+3,773,2,median_refill_rate_spot_1bps_60s_eth,median_refill_rate_spot_1bps_60s,Dynamics,B5_dynamics,-1.2128,0.237783,0.356167
+3,773,3,queue_pressure_persist_spot_1bps_300s_eth,queue_pressure_persist_spot_1bps_300s,Dynamics,B5_dynamics,1.2004,0.564359,0.318401
+3,773,4,median_refill_rate_spot_1bps_60s_btc,median_refill_rate_spot_1bps_60s,Dynamics,B5_dynamics,-1.1812,0.192238,0.311988
+3,773,5,median_refill_rate_fut_1bps_60s_eth,median_refill_rate_fut_1bps_60s,Dynamics,B5_dynamics,-1.1644,0.227615,0.313733
+3,773,6,trade_count_spot_300s_eth,trade_count_spot_300s,Activity,B3_flow,-1.1557,10.116887,10.823793
+3,773,7,trade_count_spot_300s_btc,trade_count_spot_300s,Activity,B3_flow,-1.1539,10.128233,10.723874
+3,773,8,queue_pressure_persist_spot_1bps_300s_btc,queue_pressure_persist_spot_1bps_300s,Dynamics,B5_dynamics,1.1429,0.597279,0.35861
+3,773,9,queue_pressure_persist_fut_1bps_300s_eth,queue_pressure_persist_fut_1bps_300s,Dynamics,B5_dynamics,1.1331,0.398186,0.188387
+3,773,10,median_refill_rate_fut_1bps_60s_btc,median_refill_rate_fut_1bps_60s,Dynamics,B5_dynamics,-1.1281,0.205216,0.299754
+3,773,11,mad_taker_imbalance_fut_5s_eth,mad_taker_imbalance_fut_5s,Dynamics,B5_dynamics,1.1182,0.295215,0.236544
+3,773,12,queue_pressure_persist_fut_1bps_300s_btc,queue_pressure_persist_fut_1bps_300s,Dynamics,B5_dynamics,1.1127,0.483581,0.263127
+3,773,13,median_refill_rate_spot_5bps_60s_eth,median_refill_rate_spot_5bps_60s,Dynamics,B5_dynamics,-1.097,0.067889,0.116295
+3,773,14,trade_count_spot_900s_eth,trade_count_spot_900s,Activity,B3_flow,-1.0909,10.911234,11.613647
+3,773,15,trade_count_spot_900s_btc,trade_count_spot_900s,Activity,B3_flow,-1.0757,10.890031,11.508122
+3,773,16,median_refill_rate_spot_5bps_60s_btc,median_refill_rate_spot_5bps_60s,Dynamics,B5_dynamics,-1.0439,0.059282,0.10151
+3,773,17,refill_rate_fut_2bps_60s_eth,refill_rate_fut_2bps_60s,Liquidity Events,B3_flow,-1.0396,0.187673,0.243317
+3,773,18,refill_rate_spot_5bps_60s_eth,refill_rate_spot_5bps_60s,Liquidity Events,B3_flow,-1.0334,0.094071,0.134304
+3,773,19,queue_pressure_persist_spot_1bps_900s_eth,queue_pressure_persist_spot_1bps_900s,Dynamics,B5_dynamics,1.022,0.608284,0.403223
+3,773,20,queue_pressure_persist_fut_1bps_900s_eth,queue_pressure_persist_fut_1bps_900s,Dynamics,B5_dynamics,1.0219,0.437208,0.250946
+3,773,21,queue_pressure_persist_spot_1bps_900s_btc,queue_pressure_persist_spot_1bps_900s,Dynamics,B5_dynamics,1.0209,0.646485,0.433624
+3,773,22,refill_rate_spot_2bps_60s_btc,refill_rate_spot_2bps_60s,Liquidity Events,B3_flow,-1.0121,0.195367,0.270182
+3,773,23,volume_spot_900s_eth,volume_spot_900s,Activity,B3_flow,-1.0108,8.542458,9.251975
+3,773,24,median_refill_rate_fut_5bps_60s_eth,median_refill_rate_fut_5bps_60s,Dynamics,B5_dynamics,-1.0004,0.062347,0.107502
+3,773,25,net_pressure_persist_spot_5bps_300s_eth,net_pressure_persist_spot_5bps_300s,Dynamics,B5_dynamics,0.9953,0.445243,0.401887
+3,773,26,net_pressure_persist_spot_5bps_300s_btc,net_pressure_persist_spot_5bps_300s,Dynamics,B5_dynamics,0.9775,0.449319,0.405412
+3,773,27,mad_taker_imbalance_fut_15s_eth,mad_taker_imbalance_fut_15s,Dynamics,B5_dynamics,0.9767,0.215736,0.167068
+3,773,28,avg_trade_size_fut_300s_btc,avg_trade_size_fut_300s,Activity,B3_flow,0.97,79.124557,53.713291
+3,773,29,refill_rate_spot_5bps_60s_btc,refill_rate_spot_5bps_60s,Liquidity Events,B3_flow,-0.9649,0.08662,0.118546
+3,773,30,queue_pressure_persist_fut_1bps_900s_btc,queue_pressure_persist_fut_1bps_900s,Dynamics,B5_dynamics,0.9638,0.528382,0.332607
+3,773,31,volume_fut_900s_eth,volume_fut_900s,Activity,B3_flow,-0.9605,11.146117,11.812791
+3,773,32,median_refill_rate_spot_10bps_60s_eth,median_refill_rate_spot_10bps_60s,Dynamics,B5_dynamics,-0.9459,0.035249,0.062083
+3,773,33,net_pressure_persist_spot_5bps_60s_eth,net_pressure_persist_spot_5bps_60s,Dynamics,B5_dynamics,0.943,0.723955,0.63364
+3,773,34,median_refill_rate_fut_5bps_60s_btc,median_refill_rate_fut_5bps_60s,Dynamics,B5_dynamics,-0.9368,0.058816,0.096182
+3,773,35,volume_spot_300s_eth,volume_spot_300s,Activity,B3_flow,-0.9343,7.885383,8.556631
+3,773,36,refill_rate_fut_2bps_60s_btc,refill_rate_fut_2bps_60s,Liquidity Events,B3_flow,-0.9238,0.179757,0.23099
+3,773,37,refill_rate_fut_5bps_60s_eth,refill_rate_fut_5bps_60s,Liquidity Events,B3_flow,-0.912,0.088766,0.12744
+3,773,38,median_refill_rate_spot_10bps_60s_btc,median_refill_rate_spot_10bps_60s,Dynamics,B5_dynamics,-0.906,0.03077,0.052739
+3,773,39,median_refill_rate_fut_10bps_60s_eth,median_refill_rate_fut_10bps_60s,Dynamics,B5_dynamics,-0.8957,0.033184,0.060502
+3,773,40,avg_trade_size_fut_300s_eth,avg_trade_size_fut_300s,Activity,B3_flow,0.8781,1.831276,1.471624
+3,773,41,volume_fut_900s_btc,volume_fut_900s,Activity,B3_flow,-0.8734,8.095512,8.618073
+3,773,42,mad_taker_imbalance_fut_5s_btc,mad_taker_imbalance_fut_5s,Dynamics,B5_dynamics,0.8468,0.294496,0.25271
+3,773,43,net_pressure_persist_fut_10bps_300s_eth,net_pressure_persist_fut_10bps_300s,Dynamics,B5_dynamics,0.8461,0.431095,0.397806
+3,773,44,volume_fut_300s_eth,volume_fut_300s,Activity,B3_flow,-0.8401,10.509985,11.112123
+3,773,45,refill_rate_spot_10bps_60s_eth,refill_rate_spot_10bps_60s,Liquidity Events,B3_flow,-0.8371,0.052793,0.074599
+3,773,46,median_refill_rate_fut_10bps_60s_btc,median_refill_rate_fut_10bps_60s,Dynamics,B5_dynamics,-0.8288,0.031712,0.054681
+3,773,47,range_pos_fut_3600s_btc,range_pos_fut_3600s,Range,B6_context,-0.8212,0.258162,0.585125
+3,773,48,volume_spot_900s_btc,volume_spot_900s,Activity,B3_flow,-0.8111,5.809,6.311388
+3,773,49,net_pressure_persist_fut_5bps_300s_eth,net_pressure_persist_fut_5bps_300s,Dynamics,B5_dynamics,0.8097,0.420944,0.388914
+3,773,50,refill_rate_spot_10bps_60s_btc,refill_rate_spot_10bps_60s,Liquidity Events,B3_flow,-0.797,0.048993,0.064548
+4,37,1,impact_per_liquidity_fut_5bps_60s_btc,impact_per_liquidity_fut_5bps_60s,Impact,B2_bookshape,10.1498,4e-06,0.0
+4,37,2,impact_per_liquidity_fut_5bps_300s_btc,impact_per_liquidity_fut_5bps_300s,Impact,B2_bookshape,10.1472,1e-06,0.0
+4,37,3,impact_per_liquidity_fut_5bps_900s_btc,impact_per_liquidity_fut_5bps_900s,Impact,B2_bookshape,10.1468,0.0,0.0
+4,37,4,impact_per_liquidity_spot_5bps_60s_btc,impact_per_liquidity_spot_5bps_60s,Impact,B2_bookshape,8.3895,0.0,0.0
+4,37,5,impact_per_liquidity_spot_5bps_300s_btc,impact_per_liquidity_spot_5bps_300s,Impact,B2_bookshape,6.6031,0.0,0.0
+4,37,6,refill_rate_shock_fut_10bps_60s_btc,refill_rate_shock_fut_10bps_60s,Dynamics,B5_dynamics,6.5754,27.494852,1.946652
+4,37,7,impact_per_liquidity_spot_5bps_900s_btc,impact_per_liquidity_spot_5bps_900s,Impact,B2_bookshape,6.1416,0.0,0.0
+4,37,8,impact_per_liquidity_spot_5bps_60s_eth,impact_per_liquidity_spot_5bps_60s,Impact,B2_bookshape,5.8527,2e-06,0.0
+4,37,9,mad_taker_imbalance_fut_60s_btc,mad_taker_imbalance_fut_60s,Dynamics,B5_dynamics,5.2781,0.417663,0.120586
+4,37,10,bps_sym_fut_1s_btc,bps_sym_fut_1s,Price,B6_context,5.1632,39.78363,20.49614
+4,37,11,mad_vacuum_score_fut_10bps_15s_eth,mad_vacuum_score_fut_10bps_15s,Dynamics,B5_dynamics,5.0189,7.812446,1.166854
+4,37,12,mad_vacuum_score_fut_5bps_15s_btc,mad_vacuum_score_fut_5bps_15s,Dynamics,B5_dynamics,4.8889,7.167333,1.002772
+4,37,13,mad_taker_imbalance_fut_60s_eth,mad_taker_imbalance_fut_60s,Dynamics,B5_dynamics,4.7741,0.354598,0.107741
+4,37,14,z_refill_rate_fut_10bps_60s_btc,z_refill_rate_fut_10bps_60s,Normalization,B5_dynamics,4.4943,15.234063,1.838563
+4,37,15,impact_per_liquidity_spot_5bps_300s_eth,impact_per_liquidity_spot_5bps_300s,Impact,B2_bookshape,4.3882,0.0,0.0
+4,37,16,mad_vacuum_score_fut_10bps_15s_btc,mad_vacuum_score_fut_10bps_15s,Dynamics,B5_dynamics,4.3278,6.825223,1.117629
+4,37,17,depth_gradient_bid_fut_struct50_60s_btc,depth_gradient_bid_fut_struct50_60s,Bookshape,B2_bookshape,4.3144,15.83608,2.062623
+4,37,18,impact_per_liquidity_spot_5bps_900s_eth,impact_per_liquidity_spot_5bps_900s,Impact,B2_bookshape,4.0666,0.0,0.0
+4,37,19,mad_refill_rate_spot_10bps_15s_btc,mad_refill_rate_spot_10bps_15s,Dynamics,B5_dynamics,4.0363,0.061268,0.015226
+4,37,20,mad_taker_imbalance_fut_15s_eth,mad_taker_imbalance_fut_15s,Dynamics,B5_dynamics,3.9744,0.365109,0.167068
+4,37,21,mad_refill_rate_spot_5bps_15s_btc,mad_refill_rate_spot_5bps_15s,Dynamics,B5_dynamics,3.9601,0.08935,0.023888
+4,37,22,median_vacuum_score_fut_5bps_15s_btc,median_vacuum_score_fut_5bps_15s,Dynamics,B5_dynamics,3.9526,4.245688,0.108824
+4,37,23,mad_taker_imbalance_fut_15s_btc,mad_taker_imbalance_fut_15s,Dynamics,B5_dynamics,3.7545,0.388116,0.183692
+4,37,24,liq_concentration_bid_fut_struct50_1s_btc,liq_concentration_bid_fut_struct50_1s,Bookshape,B2_bookshape,-3.6699,0.490421,0.937388
+4,37,25,depth_gradient_bid_fut_struct50_1s_btc,depth_gradient_bid_fut_struct50_1s,Bookshape,B2_bookshape,3.6699,0.509579,0.062612
+4,37,26,mad_refill_rate_spot_10bps_15s_eth,mad_refill_rate_spot_10bps_15s,Dynamics,B5_dynamics,3.646,0.06311,0.016113
+4,37,27,depth_gradient_ask_fut_struct50_1s_btc,depth_gradient_ask_fut_struct50_1s,Bookshape,B2_bookshape,3.6199,0.520976,0.065371
+4,37,28,pull_rate_shock_fut_5bps_60s_eth,pull_rate_shock_fut_5bps_60s,Dynamics,B5_dynamics,3.4365,39.316788,3.958109
+4,37,29,liq_concentration_fut_struct50_60s_btc,liq_concentration_fut_struct50_60s,Bookshape,B2_bookshape,-3.4282,0.943459,0.998532
+4,37,30,mad_vacuum_score_fut_5bps_15s_eth,mad_vacuum_score_fut_5bps_15s,Dynamics,B5_dynamics,3.4019,5.677266,1.050989
+4,37,31,depth_gradient_ask_spot_struct50_60s_btc,depth_gradient_ask_spot_struct50_60s,Bookshape,B2_bookshape,3.3183,30.034882,9.036779
+4,37,32,mad_refill_rate_fut_5bps_15s_eth,mad_refill_rate_fut_5bps_15s,Dynamics,B5_dynamics,3.3068,0.093049,0.026674
+4,37,33,net_cancel_robust_z_spot_5bps_60s_btc,net_cancel_robust_z_spot_5bps_60s,Pressure,B1_imbalance,-3.2777,-6.761621,0.045149
+4,37,34,pull_rate_fut_5bps_60s_eth,pull_rate_fut_5bps_60s,Liquidity Events,B3_flow,3.2254,10.245754,1.063396
+4,37,35,avg_trade_size_fut_60s_btc,avg_trade_size_fut_60s,Activity,B3_flow,3.2243,99.354851,40.030865
+4,37,36,impact_per_liquidity_spot_2bps_60s_btc,impact_per_liquidity_spot_2bps_60s,Impact,B2_bookshape,3.218,0.0,0.0
+4,37,37,depth_gradient_bid_spot_struct50_300s_btc,depth_gradient_bid_spot_struct50_300s,Bookshape,B2_bookshape,3.1455,133.787628,42.693077
+4,37,38,mad_refill_rate_fut_10bps_15s_eth,mad_refill_rate_fut_10bps_15s,Dynamics,B5_dynamics,3.1135,0.069915,0.019286
+4,37,39,mad_refill_rate_fut_10bps_15s_btc,mad_refill_rate_fut_10bps_15s,Dynamics,B5_dynamics,3.0723,0.06821,0.018874
+4,37,40,net_cancel_robust_z_spot_10bps_60s_btc,net_cancel_robust_z_spot_10bps_60s,Pressure,B1_imbalance,-3.0513,-6.83028,0.18515
+4,37,41,z_pull_rate_spot_10bps_60s_eth,z_pull_rate_spot_10bps_60s,Normalization,B5_dynamics,3.0384,14.75449,2.435086
+4,37,42,pull_rate_shock_fut_5bps_60s_btc,pull_rate_shock_fut_5bps_60s,Dynamics,B5_dynamics,3.0091,37.327026,4.082019
+4,37,43,median_pull_rate_fut_5bps_15s_eth,median_pull_rate_fut_5bps_15s,Dynamics,B5_dynamics,2.995,7.266088,0.663817
+4,37,44,median_vacuum_score_fut_10bps_60s_eth,median_vacuum_score_fut_10bps_60s,Dynamics,B5_dynamics,2.9776,1.616438,0.092782
+4,37,45,z_pull_rate_fut_2bps_60s_btc,z_pull_rate_fut_2bps_60s,Normalization,B5_dynamics,2.9711,13.839645,2.169151
+4,37,46,pull_rate_fut_5bps_15s_eth,pull_rate_fut_5bps_15s,Liquidity Events,B3_flow,2.9524,7.40521,0.708511
+4,37,47,ca_net_cancel_spot_5bps_spread_60s_btceth,ca_net_cancel_spot_5bps_spread_60s,Cross-Asset,B7_cross_asset,-2.9209,-7.476802,0.018995
+4,37,48,z_pull_rate_spot_5bps_60s_btc,z_pull_rate_spot_5bps_60s,Normalization,B5_dynamics,2.9182,13.10619,2.139488
+4,37,49,liq_concentration_fut_struct50_300s_btc,liq_concentration_fut_struct50_300s,Bookshape,B2_bookshape,-2.918,0.981291,0.999869
+4,37,50,net_cancel_robust_z_fut_10bps_60s_eth,net_cancel_robust_z_fut_10bps_60s,Pressure,B1_imbalance,2.9146,7.189549,0.140807
+5,148,1,pull_rate_spot_2bps_60s_btc,pull_rate_spot_2bps_60s,Liquidity Events,B3_flow,2.3752,0.656518,0.332935
+5,148,2,impact_per_liquidity_spot_5bps_300s_eth,impact_per_liquidity_spot_5bps_300s,Impact,B2_bookshape,2.2958,0.0,0.0
+5,148,3,broke_prev_day_high_300s_fut_eth,broke_prev_day_high_300s_fut,Level Events,B6_context,2.2002,0.72973,0.092447
+5,148,4,z_net_cancel_spot_5bps_900s_btc,z_net_cancel_spot_5bps_900s,Normalization,B5_dynamics,2.1964,5.457353,0.305455
+5,148,5,net_cancel_spot_10bps_60s_btc,net_cancel_spot_10bps_60s,Pressure,B1_imbalance,2.1437,22285036.0,1161490.5
+5,148,6,z_net_cancel_spot_5bps_900s_eth,z_net_cancel_spot_5bps_900s,Normalization,B5_dynamics,2.1269,6.462869,0.44641
+5,148,7,impact_per_liquidity_spot_5bps_900s_eth,impact_per_liquidity_spot_5bps_900s,Impact,B2_bookshape,2.1207,0.0,0.0
+5,148,8,refill_rate_fut_5bps_60s_eth,refill_rate_fut_5bps_60s,Liquidity Events,B3_flow,2.0999,0.216494,0.12744
+5,148,9,pull_rate_spot_2bps_15s_btc,pull_rate_spot_2bps_15s,Liquidity Events,B3_flow,2.0266,0.764506,0.398707
+5,148,10,impact_per_liquidity_spot_2bps_300s_eth,impact_per_liquidity_spot_2bps_300s,Impact,B2_bookshape,2.0265,1e-06,0.0
+5,148,11,ca_range_pct_spread_spot_900s_btceth,ca_range_pct_spread_spot_900s,Cross-Asset,B7_cross_asset,-2.0091,-0.010409,-0.002873
+5,148,12,broke_prev_day_high_900s_fut_eth,broke_prev_day_high_900s_fut,Level Events,B6_context,2.0039,0.72973,0.107934
+5,148,13,refill_rate_fut_5bps_15s_eth,refill_rate_fut_5bps_15s,Liquidity Events,B3_flow,1.995,0.279156,0.158663
+5,148,14,ca_range_pct_spread_fut_900s_btceth,ca_range_pct_spread_fut_900s,Cross-Asset,B7_cross_asset,-1.9912,-0.010529,-0.002866
+5,148,15,refill_rate_fut_10bps_60s_eth,refill_rate_fut_10bps_60s,Liquidity Events,B3_flow,1.968,0.131548,0.074181
+5,148,16,queue_pressure_spot_10bps_15s_btc,queue_pressure_spot_10bps_15s,Pressure,B1_imbalance,-1.9186,-0.350793,-0.019605
+5,148,17,mad_refill_rate_fut_5bps_60s_eth,mad_refill_rate_fut_5bps_60s,Dynamics,B5_dynamics,1.915,0.039755,0.014893
+5,148,18,median_refill_rate_fut_5bps_15s_eth,median_refill_rate_fut_5bps_15s,Dynamics,B5_dynamics,1.8933,0.25694,0.148987
+5,148,19,net_cancel_pressure_spot_5bps_60s_btc,net_cancel_pressure_spot_5bps_60s,Pressure,B1_imbalance,1.8898,246764.140625,15857.041992
+5,148,20,net_cancel_spot_5bps_60s_btc,net_cancel_spot_5bps_60s,Pressure,B1_imbalance,1.8898,14805845.0,951422.9375
+5,148,21,queue_pressure_spot_10bps_5s_btc,queue_pressure_spot_10bps_5s,Pressure,B1_imbalance,-1.8677,-0.379713,-0.021599
+5,148,22,refill_rate_fut_10bps_60s_btc,refill_rate_fut_10bps_60s,Liquidity Events,B3_flow,1.8486,0.113408,0.06741
+5,148,23,net_cancel_spot_10bps_15s_btc,net_cancel_spot_10bps_15s,Pressure,B1_imbalance,1.8035,8533379.0,639996.3125
+5,148,24,impact_per_liquidity_spot_5bps_60s_eth,impact_per_liquidity_spot_5bps_60s,Impact,B2_bookshape,1.7886,1e-06,0.0
+5,148,25,median_queue_pressure_spot_10bps_15s_btc,median_queue_pressure_spot_10bps_15s,Dynamics,B5_dynamics,-1.7181,-0.301466,-0.015782
+5,148,26,refill_rate_fut_5bps_60s_btc,refill_rate_fut_5bps_60s,Liquidity Events,B3_flow,1.7128,0.175074,0.114912
+5,148,27,refill_rate_fut_2bps_60s_eth,refill_rate_fut_2bps_60s,Liquidity Events,B3_flow,1.7123,0.334972,0.243317
+5,148,28,trade_count_spot_60s_eth,trade_count_spot_60s,Activity,B3_flow,1.6841,10.651891,9.772983
+5,148,29,median_refill_rate_fut_5bps_60s_eth,median_refill_rate_fut_5bps_60s,Dynamics,B5_dynamics,1.6799,0.183322,0.107502
+5,148,30,depth_notional_ask_struct100_spot_60s_btc,depth_notional_ask_struct100_spot_60s,Bookshape,B2_bookshape,1.6745,15462466.0,10154188.0
+5,148,31,refill_rate_spot_10bps_60s_eth,refill_rate_spot_10bps_60s,Liquidity Events,B3_flow,1.6673,0.11803,0.074599
+5,148,32,refill_rate_fut_10bps_15s_eth,refill_rate_fut_10bps_15s,Liquidity Events,B3_flow,1.6667,0.173331,0.09548
+5,148,33,pull_rate_fut_2bps_60s_btc,pull_rate_fut_2bps_60s,Liquidity Events,B3_flow,1.6357,0.575762,0.340416
+5,148,34,net_cancel_persist_sf_5bps_900s_eth,net_cancel_persist_sf_5bps_900s,Cross-Market,B4_cross_market,-1.634,0.539862,0.894313
+5,148,35,median_refill_rate_fut_10bps_15s_eth,median_refill_rate_fut_10bps_15s,Dynamics,B5_dynamics,1.6281,0.15928,0.089013
+5,148,36,mad_net_pressure_spot_10bps_60s_btc,mad_net_pressure_spot_10bps_60s,Dynamics,B5_dynamics,1.6241,42176.835938,22090.800781
+5,148,37,depth_notional_bid_struct100_fut_60s_btc,depth_notional_bid_struct100_fut_60s,Bookshape,B2_bookshape,1.619,53458540.0,28691186.0
+5,148,38,trade_count_fut_60s_eth,trade_count_fut_60s,Activity,B3_flow,1.6179,11.209921,10.340519
+5,148,39,refill_rate_spot_5bps_15s_eth,refill_rate_spot_5bps_15s,Liquidity Events,B3_flow,1.6155,0.242581,0.161391
+5,148,40,volume_spot_60s_eth,volume_spot_60s,Activity,B3_flow,1.614,8.855353,7.653641
+5,148,41,z_taker_imbalance_spot_900s_eth,z_taker_imbalance_spot_900s,Normalization,B5_dynamics,1.6131,2.022173,0.111465
+5,148,42,mad_refill_rate_fut_5bps_60s_btc,mad_refill_rate_fut_5bps_60s,Dynamics,B5_dynamics,1.5983,0.034358,0.014083
+5,148,43,median_refill_rate_fut_5bps_5s_eth,median_refill_rate_fut_5bps_5s,Dynamics,B5_dynamics,1.5945,0.28481,0.161431
+5,148,44,mad_refill_rate_spot_5bps_60s_eth,mad_refill_rate_spot_5bps_60s,Dynamics,B5_dynamics,1.5932,0.032485,0.014395
+5,148,45,queue_pressure_spot_10bps_60s_btc,queue_pressure_spot_10bps_60s,Pressure,B1_imbalance,-1.5879,-0.25953,-0.015971
+5,148,46,refill_rate_spot_5bps_60s_eth,refill_rate_spot_5bps_60s,Liquidity Events,B3_flow,1.5863,0.196061,0.134304
+5,148,47,mad_net_pressure_spot_10bps_15s_btc,mad_net_pressure_spot_10bps_15s,Dynamics,B5_dynamics,1.5759,195875.296875,97034.242188
+5,148,48,net_cancel_fut_10bps_60s_btc,net_cancel_fut_10bps_60s,Pressure,B1_imbalance,-1.575,-89396584.0,-5014433.0
+5,148,49,pull_rate_fut_2bps_60s_eth,pull_rate_fut_2bps_60s,Liquidity Events,B3_flow,1.5683,0.601726,0.357074
+5,148,50,refill_rate_spot_10bps_60s_btc,refill_rate_spot_10bps_60s,Liquidity Events,B3_flow,1.5657,0.095105,0.064548
+6,902,1,liq_concentration_bid_spot_struct50_60s_eth,liq_concentration_bid_spot_struct50_60s,Bookshape,B2_bookshape,1.0576,22.788887,17.96817
+6,902,2,depth_gradient_bid_spot_struct50_60s_eth,depth_gradient_bid_spot_struct50_60s,Bookshape,B2_bookshape,-1.0538,37.17453,41.91795
+6,902,3,depth_notional_ask_struct100_fut_300s_eth,depth_notional_ask_struct100_fut_300s,Bookshape,B2_bookshape,1.0084,54862336.0,43876064.0
+6,902,4,depth_gradient_bid_spot_struct50_300s_eth,depth_gradient_bid_spot_struct50_300s,Bookshape,B2_bookshape,-1.0074,187.596558,209.189041
+6,902,5,depth_notional_ask_struct100_fut_60s_eth,depth_notional_ask_struct100_fut_60s,Bookshape,B2_bookshape,1.0017,17.837929,17.579105
+6,902,6,liq_concentration_bid_spot_struct50_900s_eth,liq_concentration_bid_spot_struct50_900s,Bookshape,B2_bookshape,0.9964,330.36261,268.813354
+6,902,7,depth_notional_ask_struct100_fut_900s_eth,depth_notional_ask_struct100_fut_900s,Bookshape,B2_bookshape,0.9941,52126396.0,42663016.0
+6,902,8,depth_gradient_bid_spot_struct50_900s_eth,depth_gradient_bid_spot_struct50_900s,Bookshape,B2_bookshape,-0.9622,568.987549,628.498108
+6,902,9,range_pos_fut_3600s_btc,range_pos_fut_3600s,Range,B6_context,0.8735,0.932901,0.585125
+6,902,10,liq_sum_spot_60s_eth,liq_sum_spot_60s,Bookshape,B2_bookshape,0.8582,1680552.75,1277428.75
+6,902,11,liq_sum_spot_900s_eth,liq_sum_spot_900s,Bookshape,B2_bookshape,0.8526,1803677.0,1390790.375
+6,902,12,depth_notional_ask_struct50_fut_60s_eth,depth_notional_ask_struct50_fut_60s,Bookshape,B2_bookshape,0.7988,16.873377,16.627472
+6,902,13,liq_concentration_bid_spot_struct50_1s_eth,liq_concentration_bid_spot_struct50_1s,Bookshape,B2_bookshape,0.7955,0.37078,0.291531
+6,902,14,absorption_volume_bid_spot_1bps_60s_eth,absorption_volume_bid_spot_1bps_60s,Absorption,B3_flow,0.7834,18.833559,18.061117
+6,902,15,liq_sum_fut_900s_btc,liq_sum_fut_900s,Bookshape,B2_bookshape,0.7788,16.126501,15.910153
+6,902,16,liq_sum_fut_300s_btc,liq_sum_fut_300s,Bookshape,B2_bookshape,0.7773,16.181276,15.927116
+6,902,17,liq_concentration_bid_fut_struct50_900s_eth,liq_concentration_bid_fut_struct50_900s,Bookshape,B2_bookshape,0.7618,294.544495,258.364471
+6,902,18,mad_net_pressure_spot_2bps_60s_eth,mad_net_pressure_spot_2bps_60s,Dynamics,B5_dynamics,0.7565,4644.812988,3604.002441
+6,902,19,liq_concentration_bid_spot_struct100_900s_btc,liq_concentration_bid_spot_struct100_900s,Bookshape,B2_bookshape,0.7553,566.378967,511.34613
+6,902,20,depth_gradient_bid_spot_struct100_900s_btc,depth_gradient_bid_spot_struct100_900s,Bookshape,B2_bookshape,-0.752,332.699982,385.84668
+6,902,21,depth_notional_ask_struct100_fut_60s_btc,depth_notional_ask_struct100_fut_60s,Bookshape,B2_bookshape,0.7484,17.308525,17.100965
+6,902,22,depth_gradient_bid_spot_struct50_1s_eth,depth_gradient_bid_spot_struct50_1s,Bookshape,B2_bookshape,-0.7472,0.62922,0.706562
+6,902,23,depth_notional_ask_struct50_fut_900s_eth,depth_notional_ask_struct50_fut_900s,Bookshape,B2_bookshape,0.7416,16.777998,16.594036
+6,902,24,liq_concentration_bid_spot_struct100_300s_btc,liq_concentration_bid_spot_struct100_300s,Bookshape,B2_bookshape,0.7394,189.185989,170.307007
+6,902,25,absorption_volume_bid_spot_1bps_60s_btc,absorption_volume_bid_spot_1bps_60s,Absorption,B3_flow,0.7348,17.254141,16.372168
+6,902,26,depth_gradient_bid_fut_struct50_60s_eth,depth_gradient_bid_fut_struct50_60s,Bookshape,B2_bookshape,-0.7342,40.216412,42.93074
+6,902,27,depth_notional_ask_struct50_fut_300s_eth,depth_notional_ask_struct50_fut_300s,Bookshape,B2_bookshape,0.732,16.810381,16.611931
+6,902,28,depth_notional_ask_struct100_spot_60s_eth,depth_notional_ask_struct100_spot_60s,Bookshape,B2_bookshape,0.7294,8026940.0,6724185.5
+6,902,29,liq_concentration_bid_fut_struct50_300s_eth,liq_concentration_bid_fut_struct50_300s,Bookshape,B2_bookshape,0.7281,96.814552,84.57621
+6,902,30,depth_gradient_bid_spot_struct100_300s_btc,depth_gradient_bid_spot_struct100_300s,Bookshape,B2_bookshape,-0.7277,110.648987,128.696228
+6,902,31,liq_concentration_bid_spot_struct100_60s_btc,liq_concentration_bid_spot_struct100_60s,Bookshape,B2_bookshape,0.726,38.541248,34.450577
+6,902,32,depth_gradient_fut_struct100_900s_btc,depth_gradient_fut_struct100_900s,Bookshape,B2_bookshape,0.7222,1.047227,1.000386
+6,902,33,depth_gradient_bid_fut_struct50_900s_eth,depth_gradient_bid_fut_struct50_900s,Bookshape,B2_bookshape,-0.7201,604.608765,638.872681
+6,902,34,depth_notional_ask_struct100_fut_300s_btc,depth_notional_ask_struct100_fut_300s,Bookshape,B2_bookshape,0.72,17.221457,17.059444
+6,902,35,depth_gradient_bid_spot_struct100_60s_btc,depth_gradient_bid_spot_struct100_60s,Bookshape,B2_bookshape,-0.7174,21.422142,25.431257
+6,902,36,liq_sum_fut_900s_eth,liq_sum_fut_900s,Bookshape,B2_bookshape,0.7173,15.429854,15.155107
+6,902,37,depth_notional_ask_struct100_fut_900s_btc,depth_notional_ask_struct100_fut_900s,Bookshape,B2_bookshape,0.7157,17.178558,17.030203
+6,902,38,depth_gradient_ask_spot_struct50_60s_eth,depth_gradient_ask_spot_struct50_60s,Bookshape,B2_bookshape,-0.7123,38.862309,41.936256
+6,902,39,absorption_volume_bid_fut_1bps_60s_btc,absorption_volume_bid_fut_1bps_60s,Absorption,B3_flow,0.7099,20.680309,19.942146
+6,902,40,absorption_asymmetry_spot_1bps_60s_eth,absorption_asymmetry_spot_1bps_60s,Absorption,B3_flow,-0.7094,-0.411058,-0.075426
+6,902,41,trend_aligned_240m_fut_btc,trend_aligned_240m_fut,Trend,B6_context,0.7054,0.694013,0.175363
+6,902,42,absorption_asymmetry_fut_1bps_60s_btc,absorption_asymmetry_fut_1bps_60s,Absorption,B3_flow,-0.7028,-0.441269,-0.09962
+6,902,43,liq_sum_fut_300s_eth,liq_sum_fut_300s,Bookshape,B2_bookshape,0.7022,15.386486,15.124148
+6,902,44,depth_gradient_fut_struct100_300s_btc,depth_gradient_fut_struct100_300s,Bookshape,B2_bookshape,0.6983,1.077339,1.007975
+6,902,45,taker_imbalance_fut_15s_btc,taker_imbalance_fut_15s,Aggression,B1_imbalance,0.6925,0.22817,0.033655
+6,902,46,liq_concentration_fut_struct100_900s_btc,liq_concentration_fut_struct100_900s,Bookshape,B2_bookshape,-0.6905,0.939329,1.008579
+6,902,47,trend_aligned_240m_fut_eth,trend_aligned_240m_fut,Trend,B6_context,0.6904,0.675166,0.162735
+6,902,48,absorption_volume_bid_spot_1bps_15s_btc,absorption_volume_bid_spot_1bps_15s,Absorption,B3_flow,0.6904,13.600656,12.42399
+6,902,49,absorption_asymmetry_spot_1bps_60s_btc,absorption_asymmetry_spot_1bps_60s,Absorption,B3_flow,-0.6798,-0.421372,-0.066231
+6,902,50,depth_gradient_bid_fut_struct50_300s_eth,depth_gradient_bid_fut_struct50_300s,Bookshape,B2_bookshape,-0.6749,202.974716,214.338669
+7,337,1,broke_prev_day_low_900s_fut_btc,broke_prev_day_low_900s_fut,Level Events,B6_context,2.3192,0.821958,0.106505
+7,337,2,broke_prev_day_low_900s_fut_eth,broke_prev_day_low_900s_fut,Level Events,B6_context,2.2283,0.735905,0.09197
+7,337,3,broke_prev_day_low_300s_fut_btc,broke_prev_day_low_300s_fut,Level Events,B6_context,2.1664,0.661721,0.078628
+7,337,4,broke_prev_day_low_300s_fut_eth,broke_prev_day_low_300s_fut,Level Events,B6_context,2.0934,0.593472,0.067667
+7,337,5,below_prev_day_low_fut_btc,below_prev_day_low_fut,Level Events,B6_context,1.8779,0.893175,0.176793
+7,337,6,net_cancel_spot_10bps_60s_eth,net_cancel_spot_10bps_60s,Pressure,B1_imbalance,-1.8276,-6114967.0,289980.125
+7,337,7,below_prev_day_low_fut_eth,below_prev_day_low_fut,Level Events,B6_context,1.8237,0.851632,0.168692
+7,337,8,queue_pressure_spot_10bps_15s_eth,queue_pressure_spot_10bps_15s,Pressure,B1_imbalance,1.7675,0.284094,-0.006439
+7,337,9,queue_pressure_spot_10bps_60s_eth,queue_pressure_spot_10bps_60s,Pressure,B1_imbalance,1.7432,0.240689,0.000808
+7,337,10,median_queue_pressure_spot_10bps_15s_eth,median_queue_pressure_spot_10bps_15s,Dynamics,B5_dynamics,1.6828,0.253524,-0.002635
+7,337,11,queue_pressure_spot_10bps_5s_eth,queue_pressure_spot_10bps_5s,Pressure,B1_imbalance,1.6457,0.301347,-0.009913
+7,337,12,depth_notional_bid_struct100_fut_300s_eth,depth_notional_bid_struct100_fut_300s,Bookshape,B2_bookshape,1.6345,64709192.0,45120024.0
+7,337,13,median_queue_pressure_spot_10bps_60s_eth,median_queue_pressure_spot_10bps_60s,Dynamics,B5_dynamics,1.5706,0.214325,0.007009
+7,337,14,price_vs_ema_50_5m_bps_fut_btc,price_vs_ema_50_5m_bps_fut,Trend,B6_context,-1.551,-156.533356,34.170139
+7,337,15,net_cancel_pressure_spot_5bps_60s_eth,net_cancel_pressure_spot_5bps_60s,Pressure,B1_imbalance,-1.5083,-55710.457031,4668.938965
+7,337,16,net_cancel_spot_5bps_60s_eth,net_cancel_spot_5bps_60s,Pressure,B1_imbalance,-1.5083,-3342627.0,280135.96875
+7,337,17,depth_notional_bid_struct100_fut_60s_eth,depth_notional_bid_struct100_fut_60s,Bookshape,B2_bookshape,1.4938,17.97587,17.589998
+7,337,18,net_cancel_spot_10bps_15s_eth,net_cancel_spot_10bps_15s,Pressure,B1_imbalance,-1.4933,-2578788.0,46052.652344
+7,337,19,broke_prev_day_low_60s_fut_eth,broke_prev_day_low_60s_fut,Level Events,B6_context,1.487,0.329377,0.039552
+7,337,20,net_cancel_pressure_spot_5bps_60s_btc,net_cancel_pressure_spot_5bps_60s,Pressure,B1_imbalance,-1.4748,-164345.5,15857.041992
+7,337,21,net_cancel_spot_5bps_60s_btc,net_cancel_spot_5bps_60s,Pressure,B1_imbalance,-1.4748,-9860730.0,951422.9375
+7,337,22,net_cancel_spot_10bps_60s_btc,net_cancel_spot_10bps_60s,Pressure,B1_imbalance,-1.4275,-12904632.0,1161490.5
+7,337,23,price_vs_ema_50_15m_bps_fut_btc,price_vs_ema_50_15m_bps_fut,Trend,B6_context,-1.4153,-179.959518,49.637657
+7,337,24,range_pos_fut_3600s_btc,range_pos_fut_3600s,Range,B6_context,-1.3812,0.035233,0.585125
+7,337,25,depth_notional_bid_struct100_fut_900s_eth,depth_notional_bid_struct100_fut_900s,Bookshape,B2_bookshape,1.3607,59926480.0,44938104.0
+7,337,26,price_vs_ema_200_5m_bps_fut_btc,price_vs_ema_200_5m_bps_fut,Trend,B6_context,-1.3587,-183.724701,55.114399
+7,337,27,median_queue_pressure_spot_5bps_60s_eth,median_queue_pressure_spot_5bps_60s,Dynamics,B5_dynamics,1.3585,0.199083,0.004407
+7,337,28,absorption_volume_ask_fut_1bps_60s_btc,absorption_volume_ask_fut_1bps_60s,Absorption,B3_flow,1.3492,21.078363,19.696842
+7,337,29,volume_fut_300s_eth,volume_fut_300s,Activity,B3_flow,1.3459,12.076776,11.112123
+7,337,30,broke_prev_day_low_60s_fut_btc,broke_prev_day_low_60s_fut,Level Events,B6_context,1.3267,0.329377,0.047415
+7,337,31,depth_notional_bid_struct100_spot_1s_eth,depth_notional_bid_struct100_spot_1s,Bookshape,B2_bookshape,1.3238,8946126.0,6157795.5
+7,337,32,queue_pressure_spot_10bps_5s_btc,queue_pressure_spot_10bps_5s,Pressure,B1_imbalance,1.3157,0.230681,-0.021599
+7,337,33,queue_pressure_spot_10bps_15s_btc,queue_pressure_spot_10bps_15s,Pressure,B1_imbalance,1.3154,0.207452,-0.019605
+7,337,34,liq_cluster_asymmetry_fut_struct50_300s_eth,liq_cluster_asymmetry_fut_struct50_300s,Bookshape,B2_bookshape,1.3024,0.299146,-0.037099
+7,337,35,depth_notional_bid_struct50_fut_60s_eth,depth_notional_bid_struct50_fut_60s,Bookshape,B2_bookshape,1.2999,16.986002,16.596731
+7,337,36,liq_cluster_asymmetry_fut_struct100_300s_eth,liq_cluster_asymmetry_fut_struct100_300s,Bookshape,B2_bookshape,1.299,0.332554,0.005684
+7,337,37,net_cancel_pressure_spot_5bps_15s_btc,net_cancel_pressure_spot_5bps_15s,Pressure,B1_imbalance,-1.287,-290710.1875,21138.207031
+7,337,38,net_cancel_spot_5bps_15s_btc,net_cancel_spot_5bps_15s,Pressure,B1_imbalance,-1.287,-4360650.5,317073.09375
+7,337,39,queue_pressure_spot_5bps_60s_eth,queue_pressure_spot_5bps_60s,Pressure,B1_imbalance,1.2844,0.182789,-0.002429
+7,337,40,absorption_volume_ask_spot_1bps_60s_eth,absorption_volume_ask_spot_1bps_60s,Absorption,B3_flow,1.278,19.107721,17.878288
+7,337,41,liq_cluster_asymmetry_fut_struct50_60s_eth,liq_cluster_asymmetry_fut_struct50_60s,Bookshape,B2_bookshape,1.2775,0.322655,-0.03128
+7,337,42,bid_churn_fut_2bps_60s_eth,bid_churn_fut_2bps_60s,Liquidity Events,B3_flow,1.2719,12.591789,11.983907
+7,337,43,net_cancel_spot_5bps_900s_btc,net_cancel_spot_5bps_900s,Pressure,B1_imbalance,-1.2673,-46119200.0,-2193277.75
+7,337,44,depth_notional_bid_struct50_fut_300s_eth,depth_notional_bid_struct50_fut_300s,Bookshape,B2_bookshape,1.2468,16.951542,16.601507
+7,337,45,trend_aligned_15m_fut_btc,trend_aligned_15m_fut,Trend,B6_context,-1.246,-0.768546,0.248987
+7,337,46,depth_gradient_bid_spot_struct100_900s_eth,depth_gradient_bid_spot_struct100_900s,Bookshape,B2_bookshape,1.2431,330.22229,249.042374
+7,337,47,volume_fut_60s_eth,volume_fut_60s,Activity,B3_flow,1.2316,11.146817,10.199124
+7,337,48,net_cancel_spot_5bps_15s_eth,net_cancel_spot_5bps_15s,Pressure,B1_imbalance,-1.2302,-1199747.5,73865.640625
+7,337,49,net_cancel_pressure_spot_5bps_15s_eth,net_cancel_pressure_spot_5bps_15s,Pressure,B1_imbalance,-1.2302,-79983.148438,4924.381836
+7,337,50,absorption_volume_ask_spot_1bps_60s_btc,absorption_volume_ask_spot_1bps_60s,Absorption,B3_flow,1.2219,17.598318,16.204607
